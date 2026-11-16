@@ -1,0 +1,21 @@
+# 프로젝트 상세 내용 (이전 구글 사이트에서 옮김)
+title: "Master-Slave 로봇과 GNU 그림 그리는 로봇"
+blocks:
+  - { type: p, text: "Solidworks Simulation 대표 사진" }
+  - { type: img, src: images/details/robot-project1/u02.jpg, caption: "Solidwokrs & MATLAB 동작 시뮬레이션 (정동역학 해석)" }
+  - { type: img, src: images/details/robot-project1/u03.jpg, caption: "Master-Slave Robot" }
+  - { type: video, id: "1K6_PR7W9gX_Tk7TN18b2zECyYQTvIaiK" }
+  - { type: video, id: "1TW5No4-dZ53NXOHspFvvXWDCsm8VBi4A" }
+  - { type: p, text: "GNU 그림 그리는 로봇" }
+  - { type: video, id: "1KW9HMb6AK5X2rZ7If56OxVVXD8hlvxeR" }
+  - { type: h, text: "세부 실습 영상" }
+  - { type: h, text: "OpenRB-150 Project" }
+  - { type: video, id: "1tF4g5iPxluLYvi4UZfPrMfhDyzKFYcte" }
+  - { type: h, text: "Solidworks Modeling Basic" }
+  - { type: video, id: "1vyggLNaqdFh4XMIjzySQO3Us3GKqvbNq" }
+  - { type: h, text: "Solidworks Modeling Robot" }
+  - { type: video, id: "1JUbpUVky_UbNqKnGjJPDBAhzcs-BJ2Rj" }
+  - { type: h, text: "Solidworks Simulation" }
+  - { type: video, id: "1QMygjgLg9mRUdXh2tSRNdVNWuFt4hWD9" }
+  - { type: h, text: "Term Project 2-DOF Master-Slave Robot" }
+  - { type: video, id: "1WaBiJfyIP-KcO6x1oLNgGkQ13ttT_8er" }

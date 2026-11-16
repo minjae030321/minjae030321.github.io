@@ -1,0 +1,16 @@
+# 프로젝트 상세 내용 (이전 구글 사이트에서 옮김)
+title: "1자유도 파이프 이송 메커니즘"
+blocks:
+  - { type: img, src: images/details/kinematics/u04.jpg }
+  - { type: img, src: images/details/kinematics/u05.jpg }
+  - { type: p, text: "기구학 팀프로젝트 목표 : 자동화 공정에서 특정한 작업을 수행할 수 있고 링크가 많으며 자유도가 최대한 적은(1자유도) 기구 설계 및 시뮬레이션" }
+  - { type: p, text: "파이프를 옮길 수 있는 특정한 작업을 수행할 수 있으며 원판을 회전시켰을 때 메커니즘이 구현되며 링크도 13개가 들어감." }
+  - { type: h4, text: "느낀점" }
+  - { type: p, text: "링크가 많아지니 Joint 간의 결합을 고려하는 것이 굉장히 중요하다는 것을 깨달음." }
+  - { type: p, text: "어느 조인트에 부하되는 힘과 토크를 그래프로 나타내어 보면서 설계를 할 때 이를 고려하여 설게를 수행하면 더 좋을 것이라고 생각함." }
+  - { type: h, text: "기구학 동작" }
+  - { type: video, id: "1rJ4vHGpX7_Hhsr--4NzBwculLo4TXb-h" }
+  - { type: video, id: "1r-MqhvOARfSdSXPHVKRXsx9Qr0cL_c_U" }
+  - { type: h, text: "기구학 보고서" }
+  - { type: video, id: "1p7pJmcTgZNczol1QuTXIQpnMiTKNic5D" }
+  - { type: video, id: "1M0hJBzpiU-TM_c-ts4-1y3eYw4uxbFv2" }

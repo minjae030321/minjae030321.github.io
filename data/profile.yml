@@ -1,0 +1,87 @@
+# 기본 정보. Home과 CV 페이지, 왼쪽 프로필 카드에 쓰입니다.
+
+name: Minjae Kim
+name_ko: 김민재
+role: Researcher
+affiliation: Defense Industry Technology Convergence Research Institute, Gyeongsang National University
+photo: images/profile.jpg
+email: minjae0321@gnu.ac.kr
+email2: minjae030321@gmail.com
+github: minjae030321
+
+bio: >-
+  경상국립대학교 방위산업기술융합연구소 연구원입니다. 기계공학과 지능로봇을 복수전공했고,
+  학부 시절 지능 및 상호작용 로보틱스 연구실(IIRLab)에서 반작용 휠 기반 발목 보조로봇,
+  보행 위상 인식, 매니퓰레이터 드릴링 자동화 등을 연구했습니다.
+  GIST AWEAR Lab과 POSTECH BIRD Lab에서 인턴으로 재활로봇과 실험 장비를 설계했습니다.
+  사람과 함께 움직이는 로봇을 직접 설계하고, 만들고, 제어하는 일을 좋아합니다.
+
+interests:
+  - Human-Robot Interaction
+  - Bio-inspired Robotics
+  - Mechanism Design
+  - Wearable Robot
+
+education:
+  - title: B.S. in Mechanical Engineering
+    org: Gyeongsang National University
+  - title: B.S. in Intelligent Robotics (Double Major)
+    org: Gyeongsang National University
+    note: "GPA 4.23 / 4.5 (153 credits)"
+    proof: gpa
+
+work:
+  - period: 2026.10 – Present
+    title: Researcher
+    org: 방위산업기술융합연구소, 경상국립대학교 산학협력단
+  - period: 2026.06 – 2026.09
+    title: Mechanical Design Engineer
+    org: Imoon Healthcare
+  - period: 2026.03 – 2026.05
+    title: 취업연수생
+    org: 부산시청 행정자치국 통합민원과 (기록정보팀)
+
+research:
+  - period: 2026.01
+    title: Undergraduate Intern
+    org: BIRD Lab, POSTECH
+  - period: 2025.06 – 2025.08
+    title: Undergraduate Intern
+    org: AWEAR Lab, GIST
+  - period: 2023.11 – 2025.06
+    title: Undergraduate Researcher
+    org: Intelligent and Interactive Robotics Lab (IIRLab), Gyeongsang National University
+
+skills:
+  - { group: Programming, items: [Python, PyTorch, TensorFlow (Lite), C/C++, MATLAB, Arduino (Processing), ROS 2] }
+  - { group: CAD, items: [SolidWorks, CATIA V5, Fusion 360 (CAD/CAM), Inventor] }
+  - { group: PCB, items: [Altium, EasyEDA] }
+  - { group: Simulation, items: [Isaac Sim, Simulink (Simscape), OpenSim, CoppeliaSim, ANSYS] }
+  - { group: Hardware, items: [Arduino, ESP32, Teensy 4.1, Raspberry Pi, Jetson Orin Nano, Jetson Xavier NX, LuckFox] }
+  - { group: Etc., items: [LabVIEW, HTML/CSS] }
+
+courses:
+  - DYROS 부트캠프 2 (서울대학교)
+  - 제10회 인공지능 및 로보틱스 여름학교 AI & Robotics Summer School 2024 (GIST)
+  - { name: 차량 번호판 인식 프로젝트와 TensorFlow로 배우는 딥러닝 영상인식 올인원 (AISchool), proof: cert-deep-learning }
+  - { name: 파이썬 입문과 크롤링 기초 부트캠프 (잔재미코딩), proof: cert-crawling }
+
+research_projects:
+  - year: 2026
+    title: 4인치 배관의 초음파검사를 위한 원격구동 크롤러 개발
+    sponsor: 중소벤처기업부 · 중소기업기술정보진흥원 (지역혁신선도기업육성 R&D)
+  - year: 2026
+    title: 외골격형 재활로봇 M3DT 개발 및 실증
+    sponsor: 식품의약품안전처 (2026.06 – 2026.09)
+  - year: 2025
+    title: 지역사회에서 활용 가능한 하지 또는 체간 재활로봇 고도화 및 인허가를 위한 중개연구
+    sponsor: 국립재활원 (2025.06 – 2025.08)
+  - year: 2023–2025
+    title: 반작용 휠과 관절제한장치를 이용한 발목 보행보조장치 개발
+    sponsor: 한국연구재단 생애첫연구 — 보행인식기 개발, 반작용 휠 기반 발목 보조장치 설계 및 제어
+  - year: 2024
+    title: 고정밀 드릴링 가공을 위한 힘 정보 기반 모바일 매니퓰레이터 순응제어 기술 개발
+    sponsor: (주)라이브워크 용역과제 — 로봇 매니퓰레이터 제어 및 드릴 제어
+  - year: 2023
+    title: 드론 보급 활성화를 위한 음성 기반 드론조작 기술 개발
+    sponsor: 항공드론혁신융합대학 지역문제해결프로젝트 — 음성 인식 구현 및 드론 제어

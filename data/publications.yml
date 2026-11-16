@@ -1,0 +1,100 @@
+# 논문·학회·특허·수상. 각 목록 맨 위에 추가하면 최신순으로 표시됩니다.
+# 내 이름(김민재, Minjae Kim)은 자동으로 굵게 표시됩니다.
+# proof: data/details/<id>.yml 증빙 이미지 / project: 관련 프로젝트 id
+
+journals:
+  - authors: 김민재, 주찬혁, 박영진
+    title: 반작용 휠과 기계식 제동을 활용한 순간 고토크 기반 발목 Push-off 보조장치 선행연구
+    project: ankle-energywheel
+    title_en: A Pilot Study of an Ankle Assistive Device With a Reaction Wheel and Mechanical Braking for Impulsive Push-off Torque Generation
+    venue: 제어·로봇·시스템학회 논문지, 제31권 제10호, pp. 1181–1187
+    year: 2025
+    doi: 10.5302/J.ICROS.2025.25.0131
+  - authors: 김민재, 박세준, 이호수, 박영진
+    title: 손실함수를 재정의한 GRU 기반 학습 알고리즘을 통한 보행위상 예측 성능 향상
+    project: gait-recognition
+    title_en: Improving Gait Phase Prediction via a GRU-Based Learning Algorithm with a Redefined Loss Function
+    venue: 로봇학회 논문지, 제20권 제1호, pp. 130–137
+    year: 2025
+    doi: 10.7746/jkros.2025.20.1.130
+
+conferences:
+  - authors: 이동언, 하지훈, 김민재, 박영진
+    title: 이륜 자율균형 로봇의 강화학습 기반 제어 및 Sim-to-Real 적용
+    venue: 제어·로봇·시스템학회 학술대회 (ICROS 2025), Jeonju, Korea
+    year: 2025
+  - authors: 김민재, 주찬혁, 박영진
+    title: 반작용 휠과 기계식 제동을 활용한 순간 고토크 기반 발목 Push-off 보조장치 선행연구
+    project: ankle-energywheel
+    venue: 제어·로봇·시스템학회 학술대회, Jeonju, Korea
+    year: 2025
+  - authors: 김민재, 박세준, 이호수, 박영진
+    title: 손실함수를 재정의한 GRU 기반 학습 알고리즘을 통한 보행위상 인식 성능 향상
+    project: gait-recognition
+    venue: 한국로봇종합학술대회, Pyeongchang, Korea
+    year: 2024
+  - authors: 박상민, 김민재, 고다완, 권동현, 민병훈
+    title: 다축 회전구조물을 이용한 자가 발전 장치
+    project: gyro-cube
+    venue: 한국기계가공학회 추계학술대회, Jeju, Korea
+    year: 2024
+  - authors: 김민재, 이동언, 하지훈, 주찬혁
+    title: 웹캠과 컴퓨터 비전 기반 양손 재활 운동 시스템 개발
+    project: webcam-rehab
+    venue: 한국기계가공학회 추계학술대회, Jeju, Korea
+    year: 2024
+
+patents:
+  - number: 10-2025-0122093
+    title: 보행보조장치 (Walking Assistance Device)
+    date: 2025-08-29
+    inventors: 박영진, 김민재, 주찬혁
+  - number: 10-2024-0175365
+    title: 캐비티 구조를 가지는 열 제어 장치
+    project: battery-thermal
+    date: 2024-11-29
+    inventors: 권동현, 방상민, 민경훈, 고다완, 김민재
+  - number: 10-2024-0143185
+    title: 회전 구조물을 이용한 자가 발전 장치
+    project: gyro-cube
+    date: 2024-10-18
+    inventors: 박상민, 고다완, 민병훈, 권동현, 김민재, 박영진, 채민우
+
+awards:
+  - date: 2026.02
+    title: 지능로봇 학업우수자
+    org: 경상국립대학교 총장상
+  - date: 2025.02
+    title: USG 공유대학 지능로봇 학업우수자 (1등)
+    proof: award-intelligent-robotics
+    org: 울산경남지역혁신플랫폼 스마트제조엔지니어링사업단
+  - date: 2024.12
+    title: 제3회 동남권 이모빌리티 페스티벌 대상 (1등)
+    org: 울산경남지역혁신플랫폼 스마트제조엔지니어링사업단, 알에이치테크
+    note: 배터리 양방향 열 제어 장치
+    project: battery-thermal
+  - date: 2024.12
+    title: 한국기계가공학회 추계학술대회 혁신상
+    org: 한국기계가공학회
+    note: 웹캠과 컴퓨터 비전 기반 양손 재활 운동 시스템 개발
+    proof: award-ksmpe-webcam
+    project: webcam-rehab
+  - date: 2024.12
+    title: 한국기계가공학회 추계학술대회 혁신상
+    org: 한국기계가공학회
+    note: 자이로 큐브 기반 발전 시스템
+    proof: award-ksmpe-gyro
+    project: gyro-cube
+  - date: 2024.11
+    title: IP 특허캠프 대상 (1등)
+    proof: award-ip-camp
+    org: 경상국립대학교
+  - date: 2024.09
+    title: GNU ICEE 창의도전형 설계기반 아이디어 경진대회 장려상
+    proof: award-icee
+    org: 경상국립대학교
+  - date: 2024.04
+    title: 디바이스마트 공모전 장려상
+    org: 디바이스마트
+    note: "스마트 트레드밀: RGBD 카메라를 이용한 트레드밀 자동 제어 시스템"
+    project: treadmill

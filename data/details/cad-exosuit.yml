@@ -1,0 +1,19 @@
+# 프로젝트 상세 내용 (이전 구글 사이트에서 옮김)
+title: "하지 Exo-Suit 설계"
+blocks:
+  - { type: img, src: images/details/cad-exosuit/u06.jpg }
+  - { type: p, text: "CAD 과목의 목적 : CATIA 설계에 익숙해지기, CATIA에서의 다양한 곡선 설계에 익숙해지기, Joint에 대한 이해도 높이기" }
+  - { type: p, text: "설계 목적 : Exo-Suit를 통해 보행이 불편한 환자들에게 보조력을 제공해줄 수 있는 하드웨어 설계" }
+  - { type: p, text: "사람마다 허벅지 종아리의 길이와 둘레가 다르기에 조절을 할 수 있게 수행함." }
+  - { type: p, text: "-> 길이 : 4절 링크 방식을 통해 길이 조절을 수행함." }
+  - { type: p, text: "-> 둘레 원통의 길이를 조절할 수 있게 수행함." }
+  - { type: h4, text: "느낀점" }
+  - { type: p, text: "모터에 대한 이해도가 없어서 설계를 할 때 관절에 대해서만 고려를 하여 설계를 함." }
+  - { type: p, text: "기구에 대한 이해도가 많이 부족함." }
+  - { type: p, text: "CATIA 설계에 대해서 모션 시뮬레이션에 대한 이해도를 매우 향상시킬 수 있었으며 이를 통해 자유도의 이해도를 많이 높일 수 있었음." }
+  - { type: h, text: "동작 모습" }
+  - { type: video, id: "1l2bLPcwWJyLlk3hY87slUeFztrm224iR" }
+  - { type: video, id: "1fY0iVPzcKqdW58PI2qrrOmUfIYl3pAhe" }
+  - { type: video, id: "1ZYNZWb1x2CcKN_M9TrE3UaDOKLB3fkwM" }
+  - { type: video, id: "17TFyG1jhTG-bbLjvv2KP2iCECwbNM1Kf" }
+  - { type: video, id: "1BpoCu7Quxdhl0OpjMAO-0_ram_R2ZNt5" }

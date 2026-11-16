@@ -1,0 +1,6 @@
+# 프로젝트 상세 내용 (이전 구글 사이트에서 옮김)
+title: "gpa"
+source: "https://sites.google.com/view/kim-minjae/gpa"
+blocks:
+  - { type: img, src: images/details/gpa/01.jpg }
+  - { type: img, src: images/details/gpa/02.jpg }

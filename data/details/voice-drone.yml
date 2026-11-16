@@ -1,0 +1,88 @@
+# 프로젝트 상세 내용 (이전 구글 사이트에서 옮김)
+title: "드론 보급 활성화를 위한 음성기반 드론조작 기술 개발"
+source: "https://sites.google.com/view/kim-minjae/iirl-projects/iirl-main-project/%EB%93%9C%EB%A1%A0-%EB%B3%B4%EA%B8%89-%ED%99%9C%EC%84%B1%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%9D%8C%EC%84%B1%EA%B8%B0%EB%B0%98-%EB%93%9C%EB%A1%A0%EC%A1%B0%EC%9E%91-%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%B0%9C"
+blocks:
+  - { type: h, text: "사업 필요성" }
+  - { type: p, text: "일상생활에서도 원격 모니터링 기술이 있다면 소규모의 문제들이 존재하나 드론의 비용 및 조작에 대한 전문적인 지식 등 드론 활용에 진입장벽이 존재함." }
+  - { type: h, text: "결과 요약" }
+  - { type: li, level: 1, text: "자연어 기반 드론 조작기술 개발 완료" }
+  - { type: li, level: 1, text: "실내 환경 테스트 완료" }
+  - { type: li, level: 1, text: "실외 환경 테스트 완료" }
+  - { type: li, level: 1, text: "일반인 대상(1인) 실외 환경 테스트 완료" }
+  - { type: h, text: "지역문제해결 방안 및 추진전략" }
+  - { type: li, level: 1, text: "마이크로소프트에서는 chatGPT for Robotics라는 주제로 chatGPT를 사용하여 자연어로 다양한 로봇에 명령을 지시하고 작업을 수행하는 연구를 발표." }
+  - { type: li, level: 1, text: "이 연구에서는 사용자가 일상언어로 chatGPT에 명령을 하면 chatGPT가 입력받은 로봇 API를 활용하여 작업을 수행하는데 필요한 코드를 작성하고, 실제 작업 의도대로 작업을 수행하는 것을 성공적으로 시연함." }
+  - { type: li, level: 1, text: "이 연구에서는 \"User on the loop\"를 강조하며, 사용자가 chatGPT와 대화하면서 결과를 피드백할수록 로봇이 더욱더 지능적인 작업을 수행할 수 있고 안정성이 향상될 수 있음을 강조함." }
+  - { type: li, level: 1, text: "이 연구에서는 명령 prompt를 직접 타이핑해서 입력하고 있으나, 이 부분을 음성을 문자로 변환하는 STT(Speech-to-Text) 모듈을 적용하면 음성으로도 chatGPT와 소통할 수 있음." }
+  - { type: li, level: 1, text: "따라서 chatGPT를 활용하면 일상의 언어를 사용하여 드론을 조작하는 기술 개발은 충분히 가능할 것으로 판단됨." }
+  - { type: img, src: images/details/voice-drone/01.jpg, caption: "그림 1 <chatGPT를 활용한 로봇 제어 개념도>" }
+  - { type: img, src: images/details/voice-drone/02.jpg, caption: "그림 2 <실제 드론에 적용하여 제어하는 실험 영상>" }
+  - { type: h, text: "사업 주요내용" }
+  - { type: li, level: 1, text: "전체 시스템 설계" }
+  - { type: p, text: "사용자에게 익숙한 음성 명령으로 드론에게 지시를 내리고, 시각적으로 드론의 상태를 파악하면서 원하는 작업을 수행할 수 있도록 시스템을 구성" }
+  - { type: li, level: 1, text: "동작 원리 : 사용자가 마이크를 통해 음성명령을 입력 --> 입력된 음성은 GPT-4와 상호작용하며 의도를 파악하고 적절한 답변 출력 --> 출력된 명령을 드론제어에 맞게 변환하여 드론 제어코드 생성 --> 생성된 드론 코드에 의해 드론 제어 --> 드론은 현재 상태를 카메라를 통해 LIVE 송출 --> 사용자는 LIVE 영상을 통해 드론의 작동 환경 및 작업 상태 확인" }
+  - { type: li, level: 1, text: "이러한 과정 (그림 3)은 드론 조작에 익숙하지 않은 사용자도 자연스러운 대화를 통해 시스템과 소통할 수 있는 수단을 제공함." }
+  - { type: img, src: images/details/voice-drone/03.jpg, caption: "그림 3 <전체 시스템 개략도>" }
+  - { type: p, text: "본 과제를 통해 개발한 시스템은 크게 3가지 기술로 구성됨" }
+  - { type: li, level: 1, text: "STT(Speech-To-Text) : Python 모듈 중 speech-recognition이라는 모듈을 사용하여 구현하였고, 음성인식 모델로는 한국어 인식률이 좋은 Google Speech Recognition API를 사용함." }
+  - { type: li, level: 1, text: "Natural Language Processing Using GPT-4 Of OpenAI_API : STT로 얻은 질문은 OpenAI_API를 이용하여 GPT-4로 전송함. GPT-4는 대화를 분석하여 사용자의 의도를 이해하고 적절한 답변을 생성하여 반환함." }
+  - { type: li, level: 1, text: "Extraction of Drone Code : 그림 4와 같이 GPT-4를 통해 얻은 답변은 코드에 대한 설명과 함께 text 형식으로 된 드론제어용 python 코드로 구성됨. 이 중 드론제어용 python 코드만 자동으로 추출하고 이를 필요에 맞게 가공하는 프로세스를 구현해야 함." }
+  - { type: img, src: images/details/voice-drone/04.jpg, caption: "그림 4 <GPT-4를 통해 받아온 답변 예시>" }
+  - { type: p, text: "구현된 제어알고리즘" }
+  - { type: p, text: "제어 알고리즘은 그림 5와 같으며, Enter 키 입력 후 음성을 입력하면 GPT-4가 그에 맞는 적절한 답변을 생성하고, 그 답변에서 Python code를 추출해서 드론을 제어함." }
+  - { type: img, src: images/details/voice-drone/05.jpg, caption: "그림 5 <음성기반 드론제어 전체코드>" }
+  - { type: h, text: "기능구현 상의 주요 이슈 요약" }
+  - { type: p, text: "Chat_history : GPT-4가 일관성이 있고 정확하게 답변하기 위해 대화 이력 정보를 전달함." }
+  - { type: img, src: images/details/voice-drone/06.jpg, caption: "그림 6 <chat_history 함수와 초기 내용(parrot_basic.txt)>" }
+  - { type: img, src: images/details/voice-drone/07.jpg, caption: "그림 7 <chat_history를 사용하지 않았을 때의 prompt>" }
+  - { type: img, src: images/details/voice-drone/08.jpg, caption: "그림 8 <chat_history를 사용했을 때의 prompt>" }
+  - { type: p, text: "Home_position : 작업 후 드론이 돌아올 복귀위치 계산" }
+  - { type: p, text: "실외 : 드론에서 제공하는 GPS 기능을 활용하여 Home-position의 제어를 수행함." }
+  - { type: p, text: "복잡하지 않은 실내:" }
+  - { type: p, text: "실내 환경에서는 GPS신호를 신뢰할 수 없기에 드론이 이륙한 지점을 초기 위치로 설정하고, 절대 좌표로 설정함." }
+  - { type: p, text: "그러나 드론이 회전할 경우, 드론의 좌표계가 변함. 따라서 현재 드론의 좌표계를 기준으로 얻은 (x, y, z, heading angle)을 절대 좌표계를 기준으로 환산하여 초기 위치로부터의 변위인 dx, dy, dz 값을 계산함. 이를 통해 위치를 적절하게 추적할 수 있음. (이는 장애물이 없는 복잡하지 않은 실내에서 활용함.)" }
+  - { type: img, src: images/details/voice-drone/09.jpg, caption: "그림 9 <드론 이동 중 좌표계의 변화>" }
+  - { type: img, src: images/details/voice-drone/10.jpg, caption: "그림 10 <복잡하지 않은 실내에서 사용되는 제어에 사용되는 변위 계산 함수(calculate_displacement)>" }
+  - { type: p, text: "복잡한 실내:" }
+  - { type: p, text: "복잡한 실내에서는 Home_position으로 복귀할 때 사용자는 드론의 상태를 보면서 목적지까지 가기 위해서 내렸던 이동과 회전 관련 명령을 역순으로 실행시켜야 함. 그림 11에서와 같이 역순으로 명령을 실행시켜 Home_position으로 복귀할 수 있음." }
+  - { type: img, src: images/details/voice-drone/11.jpg, caption: "그림 11 <복잡한 실내에서 home_postion을 실행했을 때의 제어 코드>" }
+  - { type: h, text: "결과 요약" }
+  - { type: p, text: "실내 조작 시나리오에 대해서 드론 조작 성공" }
+  - { type: p, text: "* 장소 : 경상국립대학교 403동 415호 강의실(실내 테스트 환경)" }
+  - { type: p, text: "* 목표 : 강의실 화이트보드 뒤에 있는 물건 관찰 후 원래 위치로 복귀" }
+  - { type: p, text: "* 드론 조작 시나리오 요약" }
+  - { type: img, src: images/details/voice-drone/12.jpg, caption: "그림 12 <실내조작 시나리오>" }
+  - { type: img, src: images/details/voice-drone/13.jpg, caption: "그림 13 <음성 명령으로 드론을 움직이는 터미널 모습 (순서 왼쪽 -> 오른쪽)>" }
+  - { type: img, src: images/details/voice-drone/14.jpg, caption: "그림 14 <실제 경로 도식화>" }
+  - { type: img, src: images/details/voice-drone/15.jpg, caption: "그림 15 <사용자 모니터에서 보이는 물체>" }
+  - { type: img, src: images/details/voice-drone/16.jpg, caption: "그림 16 <물체 시점에서의 드론 모습>" }
+  - { type: img, src: images/details/voice-drone/17.jpg, caption: "그림 17 <음성으로 드론을 Homeposition을 수행하는 터미널 모습" }
+  - { type: p, text: "(순서 왼쪽 -> 오른쪽)>" }
+  - { type: p, text: "실외 조작 시나리오에 대해서 드론 조작 성공" }
+  - { type: p, text: "* 장소 : 경상국립대학교 야외공연장 (실외 테스트 환경)" }
+  - { type: p, text: "* 목표 : 야외공연장 꼭대기에 있는 물건 관찰 후 원래 위치로 복귀" }
+  - { type: p, text: "* 드론 조작 시나리오 요약" }
+  - { type: img, src: images/details/voice-drone/18.jpg, caption: "그림 18 <실외조작 시나리오; 야외공연장>" }
+  - { type: img, src: images/details/voice-drone/19.jpg, caption: "그림 19 <실제 경로 도식화>" }
+  - { type: img, src: images/details/voice-drone/20.jpg, caption: "그림 20 <음성 명령으로 드론을 움직이는 터미널 모습 (순서 왼쪽(1번) -> 오른쪽(2번))>" }
+  - { type: img, src: images/details/voice-drone/21.jpg, caption: "그림 21 <음성 명령으로 드론을 움직이는 터미널 모습 (순서 왼쪽(3번) -> 오른쪽(4번))>" }
+  - { type: img, src: images/details/voice-drone/22.jpg, caption: "그림 22 <사용자 모니터에서 보이는 물체>" }
+  - { type: img, src: images/details/voice-drone/23.jpg, caption: "그림 23" }
+  - { type: p, text: "<물체 시점에서의" }
+  - { type: p, text: "드론 모습>" }
+  - { type: video, id: "1JqN1epmFiqEu1EH94M-n1uZTUN3QAJDh" }
+  - { type: img, src: images/details/voice-drone/24.jpg, caption: "그림 24 <음성으로 드론을 Homeposition을 수행하는 터미널 모습>" }
+  - { type: img, src: images/details/voice-drone/25.jpg, caption: "그림 25 <드론이 Homeposition을 진행했을 경우 사용자가 보는 카메라>" }
+  - { type: p, text: "실외 조작 시나리오에 대해서 드론 조작 성공 (일반인 대상 실험)" }
+  - { type: p, text: "* 장소 : 경상국립대학교 403동 옥상 (실외 장소)" }
+  - { type: p, text: "* 목표 : 403동 옥상에 있는 물건 관찰 후 원래 위치로 복귀" }
+  - { type: p, text: "* 드론 조작 시나리오 요약" }
+  - { type: img, src: images/details/voice-drone/26.jpg, caption: "그림 26 <실외조작 시나리오; 옥상>" }
+  - { type: img, src: images/details/voice-drone/27.jpg, caption: "그림 27 <음성 명령으로 드론을 움직이는 터미널 모습" }
+  - { type: p, text: "(순서 왼쪽(1번) -> 오른쪽(2번))>" }
+  - { type: img, src: images/details/voice-drone/28.jpg, caption: "그림 28 <실제 경로 도식화>" }
+  - { type: img, src: images/details/voice-drone/29.jpg, caption: "그림 29 <사용자 모니터에서 보이는 물체>" }
+  - { type: img, src: images/details/voice-drone/30.jpg, caption: "그림 30" }
+  - { type: p, text: "<물체 시점에서의 드론 모습>" }
+  - { type: img, src: images/details/voice-drone/31.jpg, caption: "그림 31 <음성으로 드론을 Homeposition을 수행하는 터미널 모습>" }
+  - { type: img, src: images/details/voice-drone/32.jpg, caption: "그림 32 <드론이 Home_position을 진행했을 경우 사용자가 보는 카메라>" }

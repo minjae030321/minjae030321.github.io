@@ -1,0 +1,16 @@
+# 프로젝트 상세 내용 (이전 구글 사이트에서 옮김)
+title: "MATLAB 열전달 시뮬레이션 프로그램"
+blocks:
+  - { type: img, src: images/details/me-programming/u07.jpg }
+  - { type: img, src: images/details/me-programming/u08.jpg }
+  - { type: img, src: images/details/me-programming/u09.jpg }
+  - { type: p, text: "프로젝트 목적 : MATLAB 프로그램 활용 능력 확인" }
+  - { type: h4, text: "요구 조건" }
+  - { type: li, level: 1, text: "함수 사용 : 반드시 두 개 이상의 함수를 포함하여 프로그램 작성할 것" }
+  - { type: li, level: 1, text: "조건문과 반복문 사용 : IF/Switch의 조건문과 For/While의 반복문을 각각 최소 1회 이상 사용할 것" }
+  - { type: li, level: 1, text: "입력/출력 : 외부 파일로부터 자료를 읽거나 혹은 외부 파일로 출력하는 부분을 반드시 포함시킬 것" }
+  - { type: h4, text: "선정 이유" }
+  - { type: li, level: 1, text: "열역학 과목을 수강하며 열과 관련된 열전달에 관심을 가짐." }
+  - { type: li, level: 1, text: "MATLAB에서 실제 일어나는 현상을 그래프로 알아보기 위해 선정함." }
+  - { type: h, text: "발표 자료" }
+  - { type: video, id: "1s6IL3S71DcZjFqepB3aqgATNDtWYgJW3" }

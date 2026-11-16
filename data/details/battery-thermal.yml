@@ -1,0 +1,72 @@
+# 프로젝트 상세 내용 (이전 구글 사이트에서 옮김)
+title: "배터리 양방향 열 관리 시스템 개발"
+source: "https://sites.google.com/view/kim-minjae/iirl-projects/iirl-sub-project/%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%96%91%EB%B0%A9%ED%96%A5-%EC%97%B4-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EB%B0%9C"
+blocks:
+  - { type: h, text: "문제 인식" }
+  - { type: p, text: "배터리 열 관리의 필요성" }
+  - { type: img, src: images/details/battery-thermal/01.jpg, caption: "기존 배터리 열 관리 장치 현황 및 한계점" }
+  - { type: img, src: images/details/battery-thermal/02.jpg }
+  - { type: li, level: 1, text: "열전소자 기반을 제외한 열 관리 장치들은 단방향 열 관리만 가능" }
+  - { type: li, level: 1, text: "배터리가 고온 및 저온 일 때 발생하는 문제점을 고려하여 양방향(단열 및 방열) 열 관리가 필요" }
+  - { type: p, text: "--> 양방향 열 관리가 가능하면서 단순한 구조, 높은 효율성의 열 관리 장치 설계" }
+  - { type: h, text: "아이디어 소개" }
+  - { type: p, text: "Cavity 구조를 기반으로 한 열 제어 장치" }
+  - { type: li, level: 1, text: "배터리의 적정 작동온도 (+15 ℃ ~ +45 ℃) 를 유지하기 위해 주변 환경온도의 변화에 열적으로 유연하게 대응하는 제품" }
+  - { type: li, level: 1, text: "단열 시 열전도도가 낮은 공기가 Cavity에 흘러감." }
+  - { type: li, level: 1, text: "방열 시 열전도도가 높은 액체가 Cavity에 흘러감" }
+  - { type: img, src: images/details/battery-thermal/03.jpg }
+  - { type: h, text: "구조설계 및 개발" }
+  - { type: img, src: images/details/battery-thermal/04.jpg, caption: "장점:" }
+  - { type: li, level: 1, text: "물이 빠지면서 공기층을 형성하여 단열 효과 제공" }
+  - { type: li, level: 1, text: "물이 일부 고여도 성능 유지" }
+  - { type: li, level: 1, text: "물의 양 조절로 Cavity 공기층 제어 가능" }
+  - { type: p, text: "단점:" }
+  - { type: li, level: 1, text: "펌프를 통한 유량 제어 필요" }
+  - { type: img, src: images/details/battery-thermal/05.jpg, caption: "장점:" }
+  - { type: li, level: 1, text: "경사를 활용해 중력으로 물 제거 가능(펌프 불필요)" }
+  - { type: li, level: 1, text: "물이 채워지자마자 배터리에 직접 접촉하여 방열에 초점" }
+  - { type: p, text: "단점:" }
+  - { type: li, level: 1, text: "알루미늄 판을 경사로 가공" }
+  - { type: li, level: 1, text: "경사로 인해 열 분포가 고르지 않아 효율 저하 가능성" }
+  - { type: img, src: images/details/battery-thermal/06.jpg }
+  - { type: img, src: images/details/battery-thermal/07.jpg }
+  - { type: h, text: "제어 및 작동 시스템 통합" }
+  - { type: img, src: images/details/battery-thermal/08.jpg, caption: "1. 유동 제어 시스템" }
+  - { type: p, text: "구성 요소: 소형 DC 펌프 모터, 워터 펌프 SC-300T, 냉각수, 쿨링팬, 라디에이터, 호스, 원터치 밸브" }
+  - { type: p, text: "원리:" }
+  - { type: li, level: 1, text: "Cavity 에서 배출된 냉각수는 쿨링팬과 라디에이터를 통해 쿨링" }
+  - { type: li, level: 1, text: "냉각된 냉각수는 다시 Cavity 로 순환되도록 설계" }
+  - { type: li, level: 1, text: "지속적인 냉각이 가능하여 시스템의 효율성 향상" }
+  - { type: p, text: "2. 센서 시스템" }
+  - { type: p, text: "구성 요소: 온도 센서, 수위 센서" }
+  - { type: p, text: "원리:" }
+  - { type: li, level: 1, text: "온도 센서가 Cavity 내부 온도를 모니터링" }
+  - { type: li, level: 1, text: "기준 온도(15℃ ~ 45℃)에 따라 냉각수/공기 중 채울 것을 자동으로 결정" }
+  - { type: h, text: "제작 결과" }
+  - { type: img, src: images/details/battery-thermal/09.jpg, caption: "15도 이하인 경우" }
+  - { type: li, level: 1, text: "펌프 작동X (공기로 채워짐)" }
+  - { type: p, text: "15~45도 사이인 경우" }
+  - { type: li, level: 1, text: "냉각수로 채움(수위 센서가 작동하면 펌프 중지)" }
+  - { type: p, text: "45도 이상인 경우" }
+  - { type: li, level: 1, text: "펌프가 작동하면서 냉각수 순환" }
+  - { type: img, src: images/details/battery-thermal/10.jpg }
+  - { type: img, src: images/details/battery-thermal/11.jpg }
+  - { type: h, text: "성능 실험 및 결과" }
+  - { type: img, src: images/details/battery-thermal/12.jpg }
+  - { type: video, id: "1HsJqflQP3VBMJ3knp_YSvibU_gH6a3gM" }
+  - { type: p, text: "냉각수 투입" }
+  - { type: video, id: "1k5oyRevRg_EX6bsJX259XLk8W7zi4N9_" }
+  - { type: p, text: "Cavity (공기층 형성)" }
+  - { type: img, src: images/details/battery-thermal/13.jpg, caption: "저온일 경우" }
+  - { type: p, text: "공기층을 형성하여 단열시켜 안정한 배터리 온도로 증가시켜줌" }
+  - { type: img, src: images/details/battery-thermal/14.jpg, caption: "고온일 경우" }
+  - { type: p, text: "냉각수(액체층)를 채워 냉각수와의 열교환을 통해 안정한 배터리 온도로 감소시켜줌" }
+  - { type: h, text: "열 유동 해석" }
+  - { type: img, src: images/details/battery-thermal/15.jpg }
+  - { type: h, text: "제어 코드" }
+  - { type: video, id: "1bDg2bDYhFeTuWhFDFuym2F5TojlA8AWr" }
+  - { type: p, text: "대표 영상" }
+  - { type: h, text: "특허 출원" }
+  - { type: img, src: images/details/battery-thermal/16.jpg }
+  - { type: h, text: "대상" }
+  - { type: img, src: images/details/battery-thermal/17.jpg }
